@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sign in — account suspended</title>
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<div class="phone">
+  <main class="auth-main">
+    <div class="brand-block">
+      <a class="brand" href="index.html">SwapLoop</a>
+      <p>Battery swap &amp; e-bike charging for Shanghai riders</p>
+    </div>
+
+    <h1 class="sr-only">Sign in</h1>
+
+    <div class="alert alert--error" role="alert">
+      <span class="icon-box" aria-hidden="true"></span>
+      <div>
+        <h2>Account suspended</h2>
+        <p style="margin:0;">This account has been suspended. Contact SwapLoop support to restore access. (HTTP 403)</p>
+      </div>
+    </div>
+
+    <form class="panel form-stack" action="login-suspended.html" method="get">
+      <div class="field">
+        <label for="email">Email address</label>
+        <input type="email" id="email" name="email" value="sun.hao@swaploop.test" autocomplete="username" required>
+      </div>
+
+      <div class="field">
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" autocomplete="current-password" required>
+      </div>
+
+      <div class="form-actions">
+        <button type="submit" class="btn btn--primary btn--block">Sign in</button>
+      </div>
+      <p class="link-muted">Stays on this screen — no token is stored for a suspended account.</p>
+    </form>
+
+    <p class="link-muted"><a href="index.html">&larr; Back to sign in</a></p>
+  </main>
+</div>
+</body>
+</html>

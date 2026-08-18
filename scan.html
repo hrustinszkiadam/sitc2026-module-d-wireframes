@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Scan — SwapLoop</title>
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<div class="phone">
+  <header class="app-topbar">
+    <a class="brand" href="stations.html">SwapLoop <span>Lin Xiaoyu · SWAPPABLE / SL-48</span></a>
+  </header>
+
+  <main class="app-main app-main--with-nav">
+    <h1>Scan station QR</h1>
+    <p class="lede">Point at the poster QR on a SwapLoop Station. This does not use the device camera in the competition build.</p>
+
+    <div class="scan-frame">
+      <div>
+        <div class="scan-frame__target">station poster QR</div>
+        <span class="section-label" style="margin:0;">&lt;swaploop-qr-emulator&gt; component</span>
+      </div>
+    </div>
+
+    <div class="btn-row">
+      <a href="station-detail.html" class="btn btn--primary btn--block">Start scan</a>
+    </div>
+
+    <div class="wf-note">
+      <strong>Wireframe note —</strong> the embedded component sets <code>service-url</code> to Station Service and reads <code>scan-request-id</code> / the <code>qr-scan</code> event per the integration handout. A successful scan parses a station id and opens Station detail; a bad parse goes to <a href="scan-mismatch.html">the mismatch state</a>.
+    </div>
+
+    <p class="link-muted">Choose the active poster on the separate QR tester page (not part of this SPA) before scanning here.</p>
+  </main>
+
+  <nav class="bottom-nav" aria-label="Primary">
+    <a href="stations.html"><span class="icon-box" aria-hidden="true"></span>Stations</a>
+    <a href="scan.html" aria-current="page"><span class="icon-box" aria-hidden="true"></span>Scan</a>
+    <a href="activity.html"><span class="icon-box" aria-hidden="true"></span>Activity</a>
+    <a href="profile.html"><span class="icon-box" aria-hidden="true"></span>Profile</a>
+  </nav>
+</div>
+</body>
+</html>

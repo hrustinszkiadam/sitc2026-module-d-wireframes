@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Create account — step 1</title>
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<div class="phone">
+  <main class="auth-main">
+    <div class="brand-block">
+      <a class="brand" href="index.html">SwapLoop</a>
+      <p>Create your rider account</p>
+    </div>
+
+    <h1 class="sr-only">Create account — profile</h1>
+
+    <div class="step-indicator">
+      <span class="step step--current"><span class="step-dot">1</span> Profile</span>
+      <span class="step-sep"></span>
+      <span class="step"><span class="step-dot">2</span> Alipay link</span>
+    </div>
+
+    <form class="panel form-stack" action="register-step2.html" method="get">
+      <div class="field">
+        <label for="email">Email address</label>
+        <input type="email" id="email" name="email" autocomplete="email" required>
+      </div>
+
+      <div class="field">
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" autocomplete="new-password" required>
+      </div>
+
+      <div class="field">
+        <label for="name">Display name</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+
+      <fieldset class="fieldset">
+        <legend>Vehicle profile</legend>
+
+        <div class="field">
+          <label for="mode">Battery mode</label>
+          <select id="mode" name="mode">
+            <option>SWAPPABLE</option>
+            <option>INTEGRATED</option>
+          </select>
+          <p class="hint">Fields below change depending on this selection.</p>
+        </div>
+
+        <div class="field">
+          <label for="batteryType">Battery type</label>
+          <select id="batteryType" name="batteryType" required>
+            <option>SL-48</option>
+            <option>SL-60</option>
+          </select>
+          <p class="hint">Shown for SWAPPABLE riders. Voltage class (48V/60V) is derived by the server, not sent here.</p>
+        </div>
+
+        <div class="wf-note" style="margin:0;">
+          <strong>Wireframe note —</strong> when Battery mode is INTEGRATED, the Battery type field is replaced by a Connector type select (GB-AC-48 / GB-AC-60) and no <code>voltageClass</code> is submitted either way.
+        </div>
+      </fieldset>
+
+      <div class="form-actions">
+        <button type="submit" class="btn btn--primary btn--block">Continue to Alipay link</button>
+      </div>
+      <p class="link-muted">Already have an account? <a href="index.html">Sign in</a></p>
+    </form>
+  </main>
+</div>
+</body>
+</html>

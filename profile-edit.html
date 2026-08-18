@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Edit profile — SwapLoop</title>
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<div class="phone">
+  <header class="app-topbar">
+    <a class="topbar-back" href="profile.html" aria-label="Back to profile">&larr;</a>
+    <div class="topbar-title">
+      <strong>Edit profile</strong>
+      <span>Lin Xiaoyu · SWAPPABLE / SL-48</span>
+    </div>
+  </header>
+
+  <main class="app-main app-main--with-nav">
+    <h1 class="sr-only">Edit profile</h1>
+    <form class="panel form-stack" action="profile.html" method="get">
+      <div class="field">
+        <label for="name">Display name</label>
+        <input type="text" id="name" name="name" value="Lin Xiaoyu" required>
+      </div>
+
+      <fieldset class="fieldset">
+        <legend>Vehicle profile</legend>
+
+        <div class="field">
+          <label for="mode">Battery mode</label>
+          <select id="mode" name="mode">
+            <option selected>SWAPPABLE</option>
+            <option>INTEGRATED</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label for="batteryType">Battery type</label>
+          <select id="batteryType" name="batteryType" required>
+            <option selected>SL-48</option>
+            <option>SL-60</option>
+          </select>
+          <p class="hint">Same mode-driven field rules as registration — connector type replaces this when mode is INTEGRATED.</p>
+        </div>
+      </fieldset>
+
+      <div class="form-actions">
+        <button type="submit" class="btn btn--primary btn--block">Save changes</button>
+      </div>
+      <p class="link-muted"><a href="profile.html">Cancel</a></p>
+    </form>
+  </main>
+
+  <nav class="bottom-nav" aria-label="Primary">
+    <a href="stations.html"><span class="icon-box" aria-hidden="true"></span>Stations</a>
+    <a href="scan.html"><span class="icon-box" aria-hidden="true"></span>Scan</a>
+    <a href="activity.html"><span class="icon-box" aria-hidden="true"></span>Activity</a>
+    <a href="profile.html" aria-current="page"><span class="icon-box" aria-hidden="true"></span>Profile</a>
+  </nav>
+</div>
+</body>
+</html>

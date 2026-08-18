@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Stations — nothing compatible ready</title>
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<div class="phone">
+  <header class="app-topbar">
+    <a class="brand" href="stations.html">SwapLoop <span>Lin Xiaoyu · SWAPPABLE / SL-48</span></a>
+  </header>
+
+  <main class="app-main app-main--with-nav">
+    <h1>Stations</h1>
+
+    <div class="filter-bar" role="group" aria-label="Station type">
+      <button type="button" class="chip" aria-pressed="true">All types</button>
+      <button type="button" class="chip" aria-pressed="false">Swap</button>
+      <button type="button" class="chip" aria-pressed="false">Charging</button>
+      <button type="button" class="chip" aria-pressed="false">Hybrid</button>
+    </div>
+    <div class="filter-bar" role="group" aria-label="Additional filters">
+      <button type="button" class="chip" aria-pressed="true">Compatible availability</button>
+      <a href="stations.html" class="chip" aria-pressed="false">Nearby</a>
+    </div>
+
+    <div class="empty-state">
+      <span class="icon-box" aria-hidden="true" style="width:1.6rem;height:1.6rem;"></span>
+      <h2>Nothing compatible is ready right now</h2>
+      <p>No station currently has a ready SL-48 pack for your profile. Stations still exist — try turning off the compatible-availability filter, or check back shortly.</p>
+      <a href="stations.html" class="btn btn--primary">Clear compatible-availability filter</a>
+    </div>
+  </main>
+
+  <nav class="bottom-nav" aria-label="Primary">
+    <a href="stations.html" aria-current="page"><span class="icon-box" aria-hidden="true"></span>Stations</a>
+    <a href="scan.html"><span class="icon-box" aria-hidden="true"></span>Scan</a>
+    <a href="activity.html"><span class="icon-box" aria-hidden="true"></span>Activity</a>
+    <a href="profile.html"><span class="icon-box" aria-hidden="true"></span>Profile</a>
+  </nav>
+</div>
+</body>
+</html>

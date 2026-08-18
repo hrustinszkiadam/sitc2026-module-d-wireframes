@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Riverside Charging Hub — active hold elsewhere</title>
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<div class="phone">
+  <header class="app-topbar">
+    <a class="topbar-back" href="stations.html" aria-label="Back to stations">&larr;</a>
+    <div class="topbar-title">
+      <strong>Riverside Charging Hub</strong>
+      <span>SwapLoop Station · Charging</span>
+    </div>
+  </header>
+
+  <main class="app-main app-main--with-nav">
+    <div class="panel">
+      <div style="display:flex; justify-content:space-between; align-items:flex-start; gap:0.5rem; margin-bottom:0.5rem;">
+        <h1 style="margin:0;">Riverside Charging Hub</h1>
+        <span class="status-badge">Active</span>
+      </div>
+      <p class="lede">4 Riverside Way · Open 24 hours</p>
+    </div>
+
+    <div class="alert alert--warning" role="alert">
+      <span class="icon-box" aria-hidden="true"></span>
+      <div>
+        <h2>You have an active service at another station</h2>
+        <p style="margin:0;">Finish or cancel your current hold before reserving here. Only one active service is allowed per rider.</p>
+      </div>
+    </div>
+
+    <div class="btn-row">
+      <a href="activity-charging-reserved.html" class="btn btn--primary btn--block">Go to Activity</a>
+    </div>
+
+    <p class="link-muted" style="margin-top:1rem;">Reserve is blocked/disabled on this hub while another hold is open elsewhere.</p>
+  </main>
+
+  <nav class="bottom-nav" aria-label="Primary">
+    <a href="stations.html" aria-current="page"><span class="icon-box" aria-hidden="true"></span>Stations</a>
+    <a href="scan.html"><span class="icon-box" aria-hidden="true"></span>Scan</a>
+    <a href="activity.html"><span class="icon-box" aria-hidden="true"></span>Activity</a>
+    <a href="profile.html"><span class="icon-box" aria-hidden="true"></span>Profile</a>
+  </nav>
+</div>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sign in — SwapLoop</title>
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<div class="phone">
+  <main class="auth-main">
+    <div class="brand-block">
+      <a class="brand" href="index.html">SwapLoop</a>
+      <p>Battery swap &amp; e-bike charging for Shanghai riders</p>
+    </div>
+
+    <h1 class="sr-only">Sign in</h1>
+
+    <form class="panel form-stack" action="stations.html" method="get">
+      <div class="field">
+        <label for="email">Email address</label>
+        <input type="email" id="email" name="email" autocomplete="username" placeholder="lin.xiaoyu@swaploop.test" required>
+      </div>
+
+      <div class="field">
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" autocomplete="current-password" required>
+      </div>
+
+      <div class="form-actions">
+        <button type="submit" class="btn btn--primary btn--block">Sign in</button>
+      </div>
+      <p class="link-muted">No account yet? <a href="register-step1.html">Create one</a></p>
+    </form>
+
+    <section class="panel panel--dashed">
+      <span class="section-label">Wireframe navigation — seeded accounts</span>
+      <ul style="list-style:none; margin:0; padding:0; display:grid; gap:0.4rem; font-size:0.8125rem;">
+        <li><a href="stations.html">lin.xiaoyu@swaploop.test</a> — SWAPPABLE / SL-48</li>
+        <li><a href="stations.html">chen.wei@swaploop.test</a> — INTEGRATED / GB-AC-48</li>
+        <li><a href="login-suspended.html">sun.hao@swaploop.test</a> — suspended, login blocked</li>
+      </ul>
+    </section>
+  </main>
+</div>
+</body>
+</html>

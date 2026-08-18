@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Activity — charging live</title>
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<div class="phone">
+  <header class="app-topbar">
+    <a class="brand" href="stations.html">SwapLoop <span>Chen Wei · INTEGRATED / GB-AC-48</span></a>
+  </header>
+
+  <main class="app-main app-main--with-nav">
+    <h1>Activity</h1>
+
+    <section class="panel">
+      <div style="display:flex; justify-content:space-between; align-items:flex-start; gap:0.5rem; margin-bottom:0.5rem;">
+        <h2 style="margin:0;">Charging bay · Riverside Charging Hub</h2>
+        <span class="status-badge status-badge--strong">Charging</span>
+      </div>
+
+      <p class="live-tag"><span class="pulse-dot" aria-hidden="true"></span>Live · polling every ~1s</p>
+
+      <div class="telemetry-grid">
+        <div class="telemetry-tile">
+          <span class="tele-value">62%</span>
+          <span class="tele-label">SOC</span>
+        </div>
+        <div class="telemetry-tile">
+          <span class="tele-value">480W</span>
+          <span class="tele-label">Power</span>
+        </div>
+        <div class="telemetry-tile">
+          <span class="tele-value">31°C</span>
+          <span class="tele-label">Temp</span>
+        </div>
+      </div>
+
+      <div class="progress-track" role="progressbar" aria-valuenow="62" aria-valuemin="0" aria-valuemax="100" aria-label="Charge progress">
+        <div class="progress-track__fill" style="--pct:62%;"></div>
+      </div>
+
+      <dl class="summary-list">
+        <div><dt>Started at</dt><dd>2026-08-18T10:02:08+08:00</dd></div>
+        <div><dt>Ends at (est.)</dt><dd>2026-08-18T10:02:23+08:00</dd></div>
+      </dl>
+
+      <p class="link-muted" style="margin-top:0.6rem;">Cancel is not offered once charging has started. This screen auto-advances to <a href="activity-charging-ready.html">Ready for collection</a> when the backend reports the session complete.</p>
+    </section>
+  </main>
+
+  <nav class="bottom-nav" aria-label="Primary">
+    <a href="stations.html"><span class="icon-box" aria-hidden="true"></span>Stations</a>
+    <a href="scan.html"><span class="icon-box" aria-hidden="true"></span>Scan</a>
+    <a href="activity.html" aria-current="page"><span class="icon-box" aria-hidden="true"></span>Activity</a>
+    <a href="profile.html"><span class="icon-box" aria-hidden="true"></span>Profile</a>
+  </nav>
+</div>
+</body>
+</html>

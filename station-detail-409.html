@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Station 005 — battery unavailable</title>
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<div class="phone">
+  <header class="app-topbar">
+    <a class="topbar-back" href="stations.html" aria-label="Back to stations">&larr;</a>
+    <div class="topbar-title">
+      <strong>Station 005 — Jing&#39;an Loop</strong>
+      <span>SwapLoop Station · Swap</span>
+    </div>
+  </header>
+
+  <main class="app-main app-main--with-nav">
+    <div class="panel">
+      <div style="display:flex; justify-content:space-between; align-items:flex-start; gap:0.5rem; margin-bottom:0.5rem;">
+        <h1 style="margin:0;">Station 005 — Jing&#39;an Loop</h1>
+        <span class="status-badge">Active</span>
+      </div>
+      <p class="lede">12 Jing&#39;an Ave · Open 24 hours</p>
+    </div>
+
+    <div class="alert alert--error" role="alert">
+      <span class="icon-box" aria-hidden="true"></span>
+      <div>
+        <h2>The selected battery is not available anymore</h2>
+        <p style="margin:0;">This pack failed a safety check and can&#39;t be reserved. Availability has been reloaded below. (HTTP 409)</p>
+      </div>
+    </div>
+
+    <div class="panel">
+      <span class="section-label">For your vehicle — SWAPPABLE / SL-48</span>
+      <p class="avail-chip avail-chip--none" style="font-size:0.875rem; padding:0.4rem 0.6rem;"><span class="icon-box" aria-hidden="true"></span>No ready SL-48 battery at this station right now</p>
+    </div>
+
+    <div class="btn-row">
+      <a href="stations.html" class="btn btn--primary btn--block">Find another station</a>
+    </div>
+
+    <p class="link-muted" style="margin-top:1rem;">Reserve is hidden/disabled here — the client does not re-run quarantine rules or redirect the rider automatically.</p>
+  </main>
+
+  <nav class="bottom-nav" aria-label="Primary">
+    <a href="stations.html" aria-current="page"><span class="icon-box" aria-hidden="true"></span>Stations</a>
+    <a href="scan.html"><span class="icon-box" aria-hidden="true"></span>Scan</a>
+    <a href="activity.html"><span class="icon-box" aria-hidden="true"></span>Activity</a>
+    <a href="profile.html"><span class="icon-box" aria-hidden="true"></span>Profile</a>
+  </nav>
+</div>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Scan — unrecognised code</title>
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<div class="phone">
+  <header class="app-topbar">
+    <a class="brand" href="stations.html">SwapLoop <span>Lin Xiaoyu · SWAPPABLE / SL-48</span></a>
+  </header>
+
+  <main class="app-main app-main--with-nav">
+    <h1>Scan station QR</h1>
+
+    <div class="scan-frame">
+      <div>
+        <div class="scan-frame__target">unreadable</div>
+        <span class="section-label" style="margin:0;">&lt;swaploop-qr-emulator&gt; component</span>
+      </div>
+    </div>
+
+    <div class="alert alert--error" role="alert">
+      <span class="icon-box" aria-hidden="true"></span>
+      <div>
+        <h2>That code isn&#39;t a SwapLoop station link</h2>
+        <p style="margin:0;">The scanned payload didn&#39;t match a station deep link or a bare station id. No station was opened.</p>
+      </div>
+    </div>
+
+    <div class="btn-row">
+      <a href="scan.html" class="btn btn--primary btn--block">Try again</a>
+    </div>
+  </main>
+
+  <nav class="bottom-nav" aria-label="Primary">
+    <a href="stations.html"><span class="icon-box" aria-hidden="true"></span>Stations</a>
+    <a href="scan.html" aria-current="page"><span class="icon-box" aria-hidden="true"></span>Scan</a>
+    <a href="activity.html"><span class="icon-box" aria-hidden="true"></span>Activity</a>
+    <a href="profile.html"><span class="icon-box" aria-hidden="true"></span>Profile</a>
+  </nav>
+</div>
+</body>
+</html>

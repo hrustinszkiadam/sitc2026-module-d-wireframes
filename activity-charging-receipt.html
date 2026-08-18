@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Activity — charging receipt</title>
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<div class="phone">
+  <header class="app-topbar">
+    <a class="brand" href="stations.html">SwapLoop <span>Chen Wei · INTEGRATED / GB-AC-48</span></a>
+  </header>
+
+  <main class="app-main app-main--with-nav">
+    <h1>Activity</h1>
+
+    <section class="panel">
+      <div style="display:flex; justify-content:space-between; align-items:flex-start; gap:0.5rem; margin-bottom:0.5rem;">
+        <h2 style="margin:0;">Charging bay · Riverside Charging Hub</h2>
+        <span class="status-badge status-badge--muted">Completed</span>
+      </div>
+
+      <div class="receipt-box">
+        <div class="receipt-label">Total charged (pay-as-you-go)</div>
+        <div class="receipt-value">¥ 9.50</div>
+        <div class="receipt-code">priceCode: CHARGE_STANDARD</div>
+      </div>
+
+      <dl class="summary-list">
+        <div><dt>Collected at</dt><dd>2026-08-18T10:02:41+08:00</dd></div>
+        <div><dt>Bay</dt><dd>B2</dd></div>
+      </dl>
+
+      <div class="btn-row" style="margin-top:0.9rem;">
+        <a href="stations.html" class="btn btn--primary btn--block">Back to Stations</a>
+      </div>
+    </section>
+
+    <section>
+      <span class="section-label">Recent services</span>
+      <ul class="recent-list">
+        <li class="recent-item">
+          <span class="recent-item__main">
+            <strong>Charging · Riverside Charging Hub</strong>
+            <span>2026-08-18 · Completed</span>
+          </span>
+          <span class="recent-item__price">¥ 9.50</span>
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <nav class="bottom-nav" aria-label="Primary">
+    <a href="stations.html"><span class="icon-box" aria-hidden="true"></span>Stations</a>
+    <a href="scan.html"><span class="icon-box" aria-hidden="true"></span>Scan</a>
+    <a href="activity.html" aria-current="page"><span class="icon-box" aria-hidden="true"></span>Activity</a>
+    <a href="profile.html"><span class="icon-box" aria-hidden="true"></span>Profile</a>
+  </nav>
+</div>
+</body>
+</html>
